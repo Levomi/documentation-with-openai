@@ -5,7 +5,7 @@ const enc = get_encoding('cl100k_base');
 const apiKey = process.env.EMBEDBASE_API_KEY;
 // this is how you search Embedbase with a string query
 const search = async (query: string) => {
-    return fetch("https://embedbase-hosted-usx5gpslaq-uc.a.run.app/v1/asalar/search", {
+    return fetch("https://embedbase-hosted-usx5gpslaq-uc.a.run.app/v1/documentation/search", {
         method: "POST",
         headers: {
             Authorization: "Bearer " + apiKey,
@@ -42,6 +42,6 @@ const createContext = async (question: string, maxLen = 1800) => {
 export default async function buildPrompt(req, res) {
     const prompt = req.body.prompt;
     const context = await createContext(prompt);
-    const newPrompt = `Soruyu devamında belirtilen bağlama göre cevapla, ve eğer cevabı bağlama göre bilmiyorsan, "Bilmiyorum" de \n\nBağlam: ${context}\n\n---\n\nSoru: ${prompt}\nCevap:`;
+    const newPrompt = `Answer the question based on the following prompt. If cannot find an answer, say "I do not know"\n\nPrompt: ${context}\n\n---\n\nQuestion: ${prompt}\nAnswer:`;
     res.status(200).json({ prompt: newPrompt });
 }

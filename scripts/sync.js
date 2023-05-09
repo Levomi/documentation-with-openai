@@ -31,7 +31,7 @@ const sync = async () => {
         }
     });
     // 3. we then insert the data in Embedbase
-    const response = await fetch("https://embedbase-hosted-usx5gpslaq-uc.a.run.app/v1/asalar", { // "asalar" is your dataset ID
+    const response = await fetch('https://embedbase-hosted-usx5gpslaq-uc.a.run.app/v1/documentation', { // "onboarding" is your dataset ID
         method: "POST",
         headers: {
             "Authorization": "Bearer " + apiKey,

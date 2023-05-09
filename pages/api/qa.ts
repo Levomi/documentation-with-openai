@@ -1,7 +1,7 @@
 // pages/api/qa.ts
 import { OpenAIStream, OpenAIStreamPayload } from "../../utils/OpenAIStream";
 export const config = {
-    // We are using Vercel edge function for this endpoint
+
     runtime: "edge",
 };
 interface RequestPayload {

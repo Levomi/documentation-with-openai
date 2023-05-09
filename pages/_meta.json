@@ -1,16 +1,16 @@
 {
   "index": {
-    "title": "Anasayfa"
+    "title": "Onboarding"
   },
   "about": {
-    "title": "Hakkımızda",
+    "title": "About",
     "type": "page"
   },
-  "kullanim-ornekleri": {
-    "title": "Kullanım Örnekleri"
+  "kyc": {
+    "title": "KYC"
   },
-  "buyu-gucu-hesaplama": {
-    "title": "Büyü Gücü Hesaplama"
+  "billing": {
+    "title": "Billing"
   },
   "contact": {
     "title": "İletişim ↗",
