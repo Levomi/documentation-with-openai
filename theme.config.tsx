@@ -129,20 +129,9 @@ export const Search = () => {
 
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
-  project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
-  },
-  chat: {
-    link: 'https://discord.com',
-  },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  logo: <span>FINANCE ATLAS</span>,
   footer: {
-    text: 'Nextra Docs Template',
-  },
-  // add this to use our Search component
-  search: {
-    component: <Search />
+    text: 'Finance Docs Template',
   }
 }
 

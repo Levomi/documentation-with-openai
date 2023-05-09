@@ -12,10 +12,4 @@
   "billing": {
     "title": "Billing"
   },
-  "contact": {
-    "title": "İletişim ↗",
-    "type": "page",
-    "href": "https://twitter.com/shuding_",
-    "newWindow": true
-  }
 }
